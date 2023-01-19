@@ -1,0 +1,20 @@
+.card {
+}
+
+.iconBtn {
+	padding: 1rem;
+	color: var(--bv-primary-01);
+	--_background-color: var(--bv-primary-03);
+	--_offset-size: 2px;
+	--_offset-color: 185, 72%, 50%;
+	--_offset-strength: 0.6;
+
+	&:hover {
+		--_background-color: var(--bv-primary-03);
+		// --_offset-color: 240, 45%, 98%;
+	}
+}
+
+.secIcons {
+	padding: 2rem 0 1rem;
+}

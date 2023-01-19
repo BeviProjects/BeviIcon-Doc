@@ -1,0 +1,138 @@
+.modalContent {
+	z-index: 9;
+	inset: 0;
+}
+
+.background {
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+	transition: {
+		duration: 0.25s;
+		property: opacity;
+		timing-function: ease-in-out;
+	}
+	&[data-status='hide'] {
+		opacity: 0;
+	}
+
+	&[data-status='show'] {
+		opacity: 1;
+	}
+}
+
+.card {
+	padding: 2rem 2rem 4rem 2rem;
+	opacity: 0;
+	transform: translateY(100px);
+	border-radius: 1rem 1rem 0 0;
+	transition: {
+		duration: 0.25s;
+		property: opacity, transform;
+		timing-function: ease-in-out;
+	}
+
+	&[data-status='hide'] {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	&[data-status='show'] {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+	@media (max-width: 40rem) {
+		padding: 1rem 1rem 2rem 1rem;
+	}
+}
+
+.btnClose {
+	padding: 0.5rem;
+}
+
+.btnIcon {
+	--_size: auto;
+	--_padding: 1rem;
+	width: var(--_size);
+	height: var(--_size);
+	padding: var(--_padding);
+	background-color: var(--bv-gray-01);
+
+	svg {
+		--_iconSize: 2.5rem;
+		width: var(--_iconSize);
+		height: var(--_iconSize);
+	}
+
+	@media (max-width: 40rem) {
+		--_size: 100%;
+		--_padding: 0.5rem;
+	}
+}
+
+.hilight {
+	--_padding: 4rem;
+	aspect-ratio: 1 / 1;
+
+	svg {
+		--_iconSize: 8rem;
+	}
+
+	@media (max-width: 40rem) {
+		--_size: 100%;
+		--_padding: 0;
+		aspect-ratio: 1 / 0.8;
+		svg {
+			--_iconSize: 6rem;
+		}
+	}
+}
+
+.btnAction {
+	--_size: auto;
+	--_padding: 1rem;
+
+	svg {
+		--_iconSize: 1.5rem;
+	}
+
+	&:hover {
+		label {
+			opacity: 1;
+			transform: translateX(-50%) translateY(0);
+		}
+	}
+
+	@media (max-width: 40rem) {
+		--_size: 100%;
+		--_padding: 0.5rem;
+	}
+}
+
+.tooltipBtn {
+	position: absolute;
+	top: -1.5rem;
+	font-size: 12px;
+	padding: 0.25rem 0.5rem;
+	left: 50%;
+	opacity: 0;
+	transform: translateX(-50%) translateY(0.5rem);
+	white-space: pre;
+	transition: {
+		duration: var(--bv-duration-normal);
+		property: opacity, transform;
+		timing-function: var(--bv-ease-in-out);
+	}
+
+	&::before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		clip-path: polygon(0 0, 100% 0, 50% 60%);
+		background-color: var(--bv-primary-01);
+		position: absolute;
+		bottom: -8px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

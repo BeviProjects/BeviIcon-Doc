@@ -1,0 +1,31 @@
+@import 'https://cdn.jsdelivr.net/gh/BeviProjects/BeviCSS@latest/dist/compressed/bevi.css';
+@import 'https://cdn.jsdelivr.net/gh/BeviProjects/BeviIconFont@latest/dist/compressed/main.css';
+
+body {
+	position: relative;
+	&::before {
+		content: '';
+		position: fixed;
+		inset: 0;
+		background: linear-gradient(206.57deg, #d6dbdc 0%, #ffffff 83.33%);
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+main {
+	padding: 12rem 0 6rem 0;
+	min-height: 100vh;
+}
+
+code {
+	width: 100%;
+	display: block;
+	background-color: var(--bv-primary-03);
+	padding: 1rem 2rem;
+	border-radius: var(--bv-radius-lg);
+	color: var(--bv-primary-01);
+}
