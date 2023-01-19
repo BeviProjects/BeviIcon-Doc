@@ -16,9 +16,11 @@ interface ModalProps {
 }
 
 const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [animation, setAnimation] = useState('hide')
 	const nameNoSpace = name.replace(/\s/g, '')
 
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [iconHighlightState, setIconHighlightState] = useState([
 		solid[nameNoSpace],
 		'solid',
@@ -31,6 +33,7 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 		setTimeout(setIsOpen, 250)
 	}
 
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	useEffect(() => {
 		isOpen ? setAnimation('show') : setAnimation('hide')
 	}, [isOpen])
@@ -48,9 +51,10 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 		setIconHighlightState([light[nameNoSpace], 'light'])
 	}
 
-	const iconHighlightRef = useRef<string[]>([])
+	// eslint-disable-next-line react-hooks/rules-of-hooks
+	const iconHighlightRef = useRef<HTMLDivElement>(null)
 	const copySVG = () => {
-		navigator.clipboard.writeText(iconHighlightRef.current?.innerHTML)
+		navigator.clipboard.writeText(iconHighlightRef.current?.innerHTML as string)
 		toast.success('Ícone copiado com sucesso', {
 			style: {
 				fontFamily: 'Nunito',
@@ -64,7 +68,7 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 		element.setAttribute(
 			'href',
 			'data:svg/plain;charset=utf-8,' +
-				encodeURIComponent(iconHighlightRef.current?.innerHTML)
+				encodeURIComponent(iconHighlightRef.current?.innerHTML as string)
 		)
 		element.setAttribute(
 			'download',

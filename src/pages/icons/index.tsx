@@ -6,20 +6,10 @@ import { ReactNode, useState } from 'react'
 // Modal.setAppElement('#root')
 
 export default function index() {
-	const [isOpen, setIsOpen] = useState(false)
-	const [nameIcon, setNameIcon] = useState('')
-
-	// // eslint-disable-next-line react-hooks/rules-of-hooks
-	// const { isOpen, toggle } = useModal()
-	// // eslint-disable-next-line react-hooks/rules-of-hooks
-	// const [iconHighlight, setIconHighlight] = useState('test')
-
-	// const handleClick = (name: string) => {
-	// 	console.log(name)
-	// }
-
 	// eslint-disable-next-line react-hooks/rules-of-hooks
-
+	const [isOpen, setIsOpen] = useState(false)
+	// eslint-disable-next-line react-hooks/rules-of-hooks
+	const [nameIcon, setNameIcon] = useState('')
 	return (
 		<>
 			<Head>
