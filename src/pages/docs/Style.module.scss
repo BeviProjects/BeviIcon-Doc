@@ -1,0 +1,30 @@
+.cardShow {
+	padding: 0.5rem;
+	border: 1px solid var(--bv-gray-01);
+
+	ul {
+		padding-left: 0;
+	}
+}
+
+.cardShowIcon {
+	padding: 1rem 4rem;
+	svg {
+		--_size: 4rem;
+		width: var(--_size);
+		height: var(--_size);
+	}
+}
+
+.btnExample {
+	--_padding: 1rem;
+	padding: var(--_padding);
+
+	svg {
+		max-width: initial;
+		max-height: inherit;
+		--_size-icon: 2rem;
+		width: var(--_size-icon);
+		height: var(--_size-icon);
+	}
+}

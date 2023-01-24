@@ -17,15 +17,39 @@ a {
 }
 
 main {
-	padding: 12rem 0 6rem 0;
+	padding: 132px 0 6rem;
 	min-height: 100vh;
 }
 
 code {
+	position: relative;
 	width: 100%;
 	display: block;
-	background-color: var(--bv-primary-03);
-	padding: 1rem 2rem;
+	background-color: var(--bv-gray-01);
+	padding: 1rem 4rem 1rem 2rem;
 	border-radius: var(--bv-radius-lg);
 	color: var(--bv-primary-01);
+	line-height: 1;
+
+	button {
+		--_offset-strength: 0;
+		--_background-color: var(--bv-gray-01);
+		--_transition-motion-ok: opacity var(--bv-duration-normal)
+				var(--bv-ease-in-out),
+			background-color var(--bv-duration-normal) var(--bv-ease-in-out);
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 0;
+
+		&:hover {
+			--_background-color: var(--bv-gray-02);
+		}
+	}
+
+	&:hover {
+		button {
+			opacity: 1;
+		}
+	}
 }

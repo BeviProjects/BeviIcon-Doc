@@ -1,3 +1,10 @@
 .secInit {
-	padding-top: 4rem;
+	padding-top: 2rem;
+}
+
+.card {
+	width: 100%;
+	padding: 4rem 2rem;
+	background-color: var(--bv-primary-03);
+	border-radius: var(--bv-radius-xl);
 }

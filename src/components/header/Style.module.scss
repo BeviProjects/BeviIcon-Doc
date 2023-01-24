@@ -1,3 +1,11 @@
+@mixin background-header {
+	box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.02),
+		0px 3px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.02);
+	background-color: hsla(0, 0%, 95%, 0.95);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+
 .growMiddle {
 	flex-grow: 0.1;
 }
@@ -7,9 +15,9 @@
 }
 
 .nav {
+	z-index: 1;
 	padding: 1rem 1rem;
-	box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.02),
-		0px 3px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.02);
+	@include background-header;
 }
 
 .content,
@@ -51,10 +59,27 @@
 	transform: translate(-50%, -50%);
 
 	@media (max-width: 40rem) {
-		position: relative;
-		top: auto;
-		left: auto;
-		transform: translate(0);
+		z-index: -1;
+		top: calc(100% + 0.5rem);
+		left: 50%;
+		padding: 0.5rem;
+		width: 100%;
+		background-color: hsla(0, 0%, 95%, 1);
+		backdrop-filter: blur(20px);
+
+		&[data-status='hide'] {
+			opacity: 0;
+			transform: translate(-50%, -2rem);
+		}
+
+		&[data-status='show'] {
+			opacity: 1;
+			transform: translate(-50%, 0rem);
+		}
+
+		.growMiddle {
+			display: flex;
+		}
 	}
 }
 
