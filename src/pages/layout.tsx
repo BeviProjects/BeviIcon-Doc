@@ -19,7 +19,7 @@ export default function Layout({ children }: LayoutProps) {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link
 					rel='icon'
-					href={isDarkTheme ? '/faviconlight.ico' : '/favicondark.ico'}
+					href={isDarkTheme ? '/favicon-light.svg' : '/favicon-dark.svg'}
 				/>
 			</Head>
 			<Header />
