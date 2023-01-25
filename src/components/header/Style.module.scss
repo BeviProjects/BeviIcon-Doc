@@ -20,39 +20,6 @@
 	@include background-header;
 }
 
-.content,
-.github {
-	a {
-		position: relative;
-		padding: 0.5rem 1rem;
-		background-color: transparent;
-		z-index: 1;
-
-		&::before {
-			content: '';
-			z-index: -1;
-			position: absolute;
-			inset: 0;
-			background-color: var(--bv-gray-02);
-			border-radius: var(--bv-radius-md);
-			transform: scale(0.95);
-			opacity: 0;
-			transition: {
-				duration: var(--bv-duration-normal);
-				property: transform, opacity;
-				timing-function: var(--bv-ease-in-out);
-			}
-		}
-
-		&:hover {
-			&::before {
-				transform: scale(1);
-				opacity: 1;
-			}
-		}
-	}
-}
-
 .itemMenu {
 	position: relative;
 	padding: 0.5rem 1rem;
@@ -139,4 +106,8 @@
 .cardMobile {
 	padding: 1.5rem 1rem;
 	@include background-header(0.9);
+
+	.itemMenu {
+		padding: 1rem 1rem;
+	}
 }
