@@ -26,8 +26,6 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 		'solid',
 	])
 
-	console.log('IconName: ', name)
-
 	const closeModal = () => {
 		setAnimation('hide')
 		setTimeout(setIsOpen, 250)
@@ -84,11 +82,7 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 		<>
 			<aside
 				className={`${style.modalContent} ps-fixed ds-flex flow-row-nw justify-center align-end`}>
-				<div
-					className={`${style.background} ps-absolute`}
-					onClick={closeModal}
-					data-status={animation}></div>
-				<div className='bv-container-sm'>
+				<div className={`${style.container} bv-container-sm`}>
 					<div
 						className={`${style.card} ds-flex flow-col-nw gap-md bgc-primary-03`}
 						data-status={animation}>
@@ -221,7 +215,12 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 						</div>
 					</div>
 				</div>
+				<div
+					className='background-overlay'
+					onClick={() => closeModal()}
+					data-animation={animation}></div>
 			</aside>
+
 			<Toaster position='bottom-center' reverseOrder={false} />
 		</>
 	)

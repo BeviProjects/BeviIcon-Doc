@@ -1,7 +1,7 @@
-@mixin background-header {
+@mixin background-header($opacity: 0.95) {
 	box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.02),
 		0px 3px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.02);
-	background-color: hsla(0, 0%, 95%, 0.95);
+	background-color: hsla(0, 0%, 95%, $opacity);
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 }
@@ -15,7 +15,7 @@
 }
 
 .nav {
-	z-index: 1;
+	z-index: 10;
 	padding: 1rem 1rem;
 	@include background-header;
 }
@@ -53,29 +53,49 @@
 	}
 }
 
+.itemMenu {
+	position: relative;
+	padding: 0.5rem 1rem;
+	background-color: transparent;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		inset: 0;
+		background-color: var(--bv-gray-02);
+		border-radius: var(--bv-radius-md);
+		transform: scale(0.95);
+		opacity: 0;
+		transition: {
+			duration: var(--bv-duration-normal);
+			property: transform, opacity;
+			timing-function: var(--bv-ease-in-out);
+		}
+	}
+
+	&:hover {
+		&::before {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+
 .content {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 
 	@media (max-width: 40rem) {
-		z-index: -1;
+		z-index: 9;
 		top: calc(100% + 0.5rem);
 		left: 50%;
 		padding: 0.5rem;
 		width: 100%;
 		background-color: hsla(0, 0%, 95%, 1);
 		backdrop-filter: blur(20px);
-
-		&[data-status='hide'] {
-			opacity: 0;
-			transform: translate(-50%, -2rem);
-		}
-
-		&[data-status='show'] {
-			opacity: 1;
-			transform: translate(-50%, 0rem);
-		}
 
 		.growMiddle {
 			display: flex;
@@ -90,4 +110,33 @@
 	padding: 0.25rem 0.5rem;
 	border-radius: var(--bv-radius-sm);
 	font-size: 0.875rem;
+}
+
+.menuMobile {
+	z-index: 7;
+	top: calc(4.5rem + 0.5rem);
+	padding-inline: 1rem;
+
+	&[data-animation='show'] {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+
+	&[data-animation='hide'] {
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+
+	&[data-overlay='open'] {
+		display: none;
+	}
+
+	&[data-overlay='close'] {
+		display: flex;
+	}
+}
+
+.cardMobile {
+	padding: 1.5rem 1rem;
+	@include background-header(0.9);
 }
