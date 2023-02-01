@@ -56,7 +56,7 @@ const index = () => {
 						</Link>
 					</div>
 					<div
-						className={`${style.content} ps-absolute ds-flex-center flow-row-nw sm:flow-col-nw gap-md radius-lg hide-on-mobile`}>
+						className={`${style.content} ps-absolute ds-flex-center lg:ds-none flow-row-nw sm:flow-col-nw gap-md radius-lg lg:hidden`}>
 						<Link href='/docs' className={style.itemMenu}>
 							Documentação
 						</Link>
@@ -68,7 +68,7 @@ const index = () => {
 						</Link>
 					</div>
 					<div
-						className={`${style.growMiddle} ${style.github} hide-on-mobile ds-flex flow-row-nw justify-end align-center gap-sm`}>
+						className={`${style.growMiddle} ${style.github} lg:hidden ds-flex lg:ds-none flow-row-nw justify-end align-center gap-sm`}>
 						<span className={`${style.version}`}>1.1-beta</span>
 
 						<Link

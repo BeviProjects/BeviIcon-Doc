@@ -12,7 +12,7 @@ import light from '../../components/icon/light'
 
 import Image from 'next/image'
 import ImageZero from '/public/image/docs/docs-00.jpg'
-import ImageZeroMobile from '/public/image/docs/docs-00-mobile.jpg'
+import ImageZeroMobile from '/public/image/docs/docs-00-mobile.png'
 import { ReactNode } from 'react'
 
 import BtnCopy from '../../components/button/copy'
