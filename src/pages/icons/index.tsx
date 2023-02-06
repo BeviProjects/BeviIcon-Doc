@@ -33,6 +33,9 @@ export default function index() {
 						<ButtonAnchor to='e' />
 						<ButtonAnchor to='f' />
 						<ButtonAnchor to='g' />
+						<ButtonAnchor to='h' />
+						<ButtonAnchor to='i' />
+						<ButtonAnchor to='k' />
 						<ButtonAnchor to='l' />
 						<ButtonAnchor to='m' />
 						<ButtonAnchor to='p' />
@@ -41,6 +44,7 @@ export default function index() {
 						<ButtonAnchor to='t' />
 						<ButtonAnchor to='v' />
 						<ButtonAnchor to='w' />
+						<ButtonAnchor to='y' />
 					</section>
 					{/* https://www.youtube.com/watch?v=QzW03hyw_bU */}
 				</div>
@@ -57,12 +61,57 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='alternate email'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='arrow back'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='arrow circle right'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='arrow forward'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='arrow north east'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='arrow north'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='arrow north weast'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='arrow selector tool'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='arrow south'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='article'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='assignment'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -73,6 +122,11 @@ export default function index() {
 						/>
 					</IconCollection>
 					<IconCollection anchor='b' title='B'>
+						<Button
+							name='bank'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 						<Button
 							name='bevipentagono'
 							setIsOpen={setIsOpen}
@@ -98,6 +152,11 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+						<Button
+							name='bookmark'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 					</IconCollection>
 					<IconCollection anchor='c' title='C'>
 						<Button
@@ -116,12 +175,72 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='chat'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='check circle'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='chevron back'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='chevron down'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='chevron forward'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='chevron left'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='chevron right'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='chevron up'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='cloud'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
 						<Button
 							name='construction'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='contact mail'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='contact phone'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='contact support'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='corporate'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -138,6 +257,11 @@ export default function index() {
 					</IconCollection>
 					<IconCollection anchor='d' title='D'>
 						<Button
+							name='description'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='directions car'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
@@ -147,10 +271,25 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+						<Button
+							name='draft'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='drafts'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 					</IconCollection>
 					<IconCollection anchor='e' title='E'>
 						<Button
 							name='eco'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='email content'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -172,7 +311,22 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='facebook'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='fact check'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='falabevi'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='feed'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -188,6 +342,8 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+					</IconCollection>
+					<IconCollection anchor='h' title='H'>
 						<Button
 							name='hand archive'
 							setIsOpen={setIsOpen}
@@ -224,12 +380,34 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='help center'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='help'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='home'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
 						<Button
 							name='house car'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+					</IconCollection>
+					<IconCollection anchor='i' title='I'>
+						<Button
+							name='import contacts'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='instagram'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -248,12 +426,37 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='launch'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='lightbulb'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='linkedin'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='list alt'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='local shipping'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='lock'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='lock person'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -265,6 +468,21 @@ export default function index() {
 					</IconCollection>
 					<IconCollection anchor='m' title='M'>
 						<Button
+							name='mail'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='mark as unread'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='medal honor'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='medal'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
@@ -274,8 +492,18 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+						<Button
+							name='mood'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 					</IconCollection>
 					<IconCollection anchor='p' title='P'>
+						<Button
+							name='perm phone msg'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 						<Button
 							name='person remove'
 							setIsOpen={setIsOpen}
@@ -287,6 +515,16 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='phone in talk'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='pie chart'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='place'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
@@ -294,7 +532,17 @@ export default function index() {
 					</IconCollection>
 					<IconCollection anchor='q' title='Q'>
 						<Button
+							name='query stats'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='question answer'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='quiz'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -312,6 +560,31 @@ export default function index() {
 						/>
 						<Button
 							name='search'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='sentiment dissatisfied'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='sentiment satisfied'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='sentiment very satisfied'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='settings'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='shield with house'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -336,7 +609,22 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='speaker notes'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='swipe right'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='speed'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='sports motorsports'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -344,6 +632,16 @@ export default function index() {
 					<IconCollection anchor='t' title='T'>
 						<Button
 							name='target'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='thumb up'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='trophy'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -373,6 +671,13 @@ export default function index() {
 						/>
 						<Button
 							name='work'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+					</IconCollection>
+					<IconCollection anchor='y' title='Y'>
+						<Button
+							name='youtube'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>

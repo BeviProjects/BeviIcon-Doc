@@ -69,7 +69,7 @@ const index = () => {
 					</div>
 					<div
 						className={`${style.growMiddle} ${style.github} lg:hidden ds-flex lg:ds-none flow-row-nw justify-end align-center gap-sm`}>
-						<span className={`${style.version}`}>1.1-beta</span>
+						<span className={`${style.version}`}>v1.0.0</span>
 
 						<Link
 							href='https://github.com/BeviProjects/BeviIcon-Doc'
@@ -97,7 +97,7 @@ const index = () => {
 					</div>
 					<button
 						type='button'
-						className='hide-on-desk sm'
+						className='sm ds-none lg:ds-flex'
 						aria-label='Menu'
 						onClick={() => {
 							isOpen ? closeMenu() : openMenu()

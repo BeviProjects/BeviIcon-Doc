@@ -2,14 +2,14 @@ import { ReactNode } from 'react'
 import style from './Style.module.scss'
 import { FadeIn } from '../animation/index'
 
-interface ButtonProps {
+interface IndexProps {
 	styleSection?: string
 	anchor: string
 	title: string
 	children: ReactNode
 }
 
-const Button = ({ styleSection, anchor, title, children }: ButtonProps) => {
+const Index = ({ styleSection, anchor, title, children }: IndexProps) => {
 	return (
 		<FadeIn.YtoTop>
 			<section
@@ -25,4 +25,4 @@ const Button = ({ styleSection, anchor, title, children }: ButtonProps) => {
 	)
 }
 
-export default Button
+export default Index
