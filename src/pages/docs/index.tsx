@@ -62,12 +62,12 @@ export default function Index() {
 									<Image
 										src={ImageZeroMobile}
 										alt={'Menu de opções para seleção de ícone'}
-										className='object-contain hide-on-desk'
+										className='object-contain ds-none lg:ds-block'
 									/>
 									<Image
 										src={ImageZero}
 										alt={'Menu de opções para seleção de ícone'}
-										className='object-contain hide-on-mobile'
+										className='object-contain ds-blcok lg:ds-none'
 									/>
 								</picture>
 							</div>
