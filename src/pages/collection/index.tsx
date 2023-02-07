@@ -30,7 +30,7 @@ export default function Index() {
 					<section className='ds-flex flow-row-wr gap-md'>
 						<LinkScroll to='bevipentagono'>Bevipentagono</LinkScroll>
 						<LinkScroll to='beviprotege'>Beviprotege</LinkScroll>
-						<LinkScroll to='version1.0.0'>Versão 1.0.0</LinkScroll>
+						<LinkScroll to='version1.0'>Versão 1.0</LinkScroll>
 					</section>
 				</div>
 				<div className='bv-container-md ds-flex flow-col-nw gap-lg'>
@@ -55,8 +55,8 @@ export default function Index() {
 						/>
 					</IconCollection>
 					<IconCollectionVersion.Root
-						anchor='version1.0.0'
-						title='Versão 1.0.0'
+						anchor='version1.0'
+						title='Versão 1.0'
 						styleSection={`${style.collection} bgc-primary-03 radius-xl`}>
 						<IconCollectionVersion.UpdateArea>
 							<Button

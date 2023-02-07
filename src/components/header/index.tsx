@@ -69,7 +69,7 @@ const index = () => {
 					</div>
 					<div
 						className={`${style.growMiddle} ${style.github} lg:hidden ds-flex lg:ds-none flow-row-nw justify-end align-center gap-sm`}>
-						<span className={`${style.version}`}>v1.0.0</span>
+						<span className={`${style.version}`}>v1.0</span>
 
 						<Link
 							href='https://github.com/BeviProjects/BeviIcon-Doc'

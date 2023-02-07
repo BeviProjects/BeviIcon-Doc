@@ -215,6 +215,21 @@ export default function Index() {
 						<FadeIn.YtoTop>
 							<div className='ds-flex flow-col-nw gap-md'>
 								<div className='ds-flex flow-col-nw gap-sm'>
+									<h3 className='font-weight-600'>Repositório no GitHub</h3>
+									<p>
+										Caso queira acompanhar o desenvolvimento da biblioteca de
+										ícones
+									</p>
+								</div>
+								<code>
+									https://github.com/BeviProjects/BeviIconFont/tree/v1.0.1
+									<BtnCopy contentCopy='https://github.com/BeviProjects/BeviIconFont/tree/v1.0.1' />
+								</code>
+							</div>
+						</FadeIn.YtoTop>
+						<FadeIn.YtoTop>
+							<div className='ds-flex flow-col-nw gap-md'>
+								<div className='ds-flex flow-col-nw gap-sm'>
 									<h3 className='font-weight-600'>Link CDN</h3>
 									<p>
 										Para utilização dos ícones solid em código, basta copiar o
@@ -226,9 +241,9 @@ export default function Index() {
 									<br />
 									rel=&#34;stylesheet&#34;
 									<br />
-									href=&#34;https://cdn.jsdelivr.net/gh/BeviProjects/BeviIconFont@v1.0-beta/dist/compressed/main.css&#34;
+									href=&#34;https://cdn.jsdelivr.net/gh/BeviProjects/BeviIconFont@v1.0.1/dist/compressed/main.css&#34;
 									/&#62;
-									<BtnCopy contentCopy='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviIconFont@v1.0-beta/dist/compressed/main.css" />' />
+									<BtnCopy contentCopy='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BeviProjects/BeviIconFont@v1.0.1/dist/compressed/main.css" />' />
 								</code>
 							</div>
 						</FadeIn.YtoTop>
