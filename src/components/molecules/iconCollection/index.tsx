@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import style from './Style.module.scss'
-import { FadeIn } from '../animation/index'
+import { FadeIn } from '../../atoms/animation/index'
 
 interface IndexProps {
 	styleSection?: string

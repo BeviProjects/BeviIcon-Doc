@@ -1,13 +1,10 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useEffect, useRef, useState } from 'react'
 import style from './Style.module.scss'
 
 import toast, { Toaster } from 'react-hot-toast'
 
-import AmountSVG from '../../components/icon/amount'
-import solid from '../../components/icon/solid'
-import duo from '../../components/icon/duo'
-import dark from '../../components/icon/dark'
-import light from '../../components/icon/light'
+import BvIcon from '../../../../lib/bvIcon'
 
 interface ModalProps {
 	setIsOpen: (value: boolean) => void
@@ -16,40 +13,25 @@ interface ModalProps {
 }
 
 const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
-	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [animation, setAnimation] = useState('hide')
 	const nameNoSpace = name.replace(/\s/g, '')
 
-	// eslint-disable-next-line react-hooks/rules-of-hooks
-	const [iconHighlightState, setIconHighlightState] = useState([
-		solid[nameNoSpace],
-		'solid',
-	])
-
+	// Controll modal
 	const closeModal = () => {
 		setAnimation('hide')
 		setTimeout(setIsOpen, 250)
 	}
-
-	// eslint-disable-next-line react-hooks/rules-of-hooks
 	useEffect(() => {
 		isOpen ? setAnimation('show') : setAnimation('hide')
 	}, [isOpen])
 
-	const solidHighlight = () => {
-		setIconHighlightState([solid[nameNoSpace], 'solid'])
-	}
-	const duoHighlight = () => {
-		setIconHighlightState([duo[nameNoSpace], 'duo'])
-	}
-	const darkHighlight = () => {
-		setIconHighlightState([dark[nameNoSpace], 'dark'])
-	}
-	const lightHighlight = () => {
-		setIconHighlightState([light[nameNoSpace], 'light'])
+	// Set hilight
+	const [iconHilight, setIconHilight] = useState('solid')
+	const handleIcon = (variant: string) => {
+		setIconHilight(variant)
 	}
 
-	// eslint-disable-next-line react-hooks/rules-of-hooks
+	// Coppy SVG
 	const iconHighlightRef = useRef<HTMLDivElement>(null)
 	const copySVG = () => {
 		navigator.clipboard.writeText(iconHighlightRef.current?.innerHTML as string)
@@ -61,6 +43,7 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 		})
 	}
 
+	// Download SVG
 	const downloadSVG = () => {
 		var element = document.createElement('a')
 		element.setAttribute(
@@ -68,10 +51,7 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 			'data:svg/plain;charset=utf-8,' +
 				encodeURIComponent(iconHighlightRef.current?.innerHTML as string)
 		)
-		element.setAttribute(
-			'download',
-			nameNoSpace + '-' + iconHighlightState[1] + '.svg'
-		)
+		element.setAttribute('download', nameNoSpace + '-' + iconHilight + '.svg')
 		element.style.display = 'none'
 		document.body.appendChild(element)
 		element.click()
@@ -115,37 +95,37 @@ const index = ({ setIsOpen, isOpen, name }: ModalProps) => {
 								<div
 									className={`${style.btnIcon} ${style.hilight} ds-flex-center radius-md`}
 									ref={iconHighlightRef}>
-									<AmountSVG name={name}>{iconHighlightState[0]}</AmountSVG>
+									<BvIcon name={name ? name : 'cube'} variant={iconHilight} />
 								</div>
 								<div className='w-100 ds-flex flow-col-nw gap-lg'>
 									<div className='ds-grid w-100 grid-tpl-col-4 sm:grid-tpl-col-2 gap-md'>
 										<button
 											type='button'
 											className={`${style.btnIcon} ds-flex-center radius-md`}
-											onClick={solidHighlight}
+											onClick={() => handleIcon('solid')}
 											aria-label={`Ícone ${name} solid`}>
-											<AmountSVG name={name}>{solid[nameNoSpace]}</AmountSVG>
+											<BvIcon name={name ? name : 'cube'} variant='solid' />
 										</button>
 										<button
 											type='button'
 											className={`${style.btnIcon} ds-flex-center radius-md`}
-											onClick={duoHighlight}
+											onClick={() => handleIcon('duo')}
 											aria-label={`Ícone ${name} duotone`}>
-											<AmountSVG name={name}>{duo[nameNoSpace]}</AmountSVG>
+											<BvIcon name={name ? name : 'cube'} variant='duo' />
 										</button>
 										<button
 											type='button'
 											className={`${style.btnIcon} ds-flex-center radius-md`}
-											onClick={darkHighlight}
+											onClick={() => handleIcon('dark')}
 											aria-label={`Ícone ${name} dark`}>
-											<AmountSVG name={name}>{dark[nameNoSpace]}</AmountSVG>
+											<BvIcon name={name ? name : 'cube'} variant='dark' />
 										</button>
 										<button
 											type='button'
 											className={`${style.btnIcon} ds-flex-center radius-md`}
-											onClick={lightHighlight}
+											onClick={() => handleIcon('light')}
 											aria-label={`Ícone ${name} light`}>
-											<AmountSVG name={name}>{light[nameNoSpace]}</AmountSVG>
+											<BvIcon name={name ? name : 'cube'} variant='light' />
 										</button>
 									</div>
 									<div className='ds-flex flow-row-nw gap-md'>

@@ -1,23 +1,30 @@
+// React / NextJS
+import { ReactNode } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
+
+// External lib
+
+// Internal lib
+import BvIcon from '../../../lib/bvIcon'
+
+// Component
+// atom
+import BtnCopy from '../../components/atoms/btnCopy'
+import { FadeIn } from '../../components/atoms/animation'
+import CardNew from '../../components/atoms/cardNew'
+
+// molecule
+// organism
+
+// Style module
 import styleMain from '../Style.module.scss'
 import style from './Style.module.scss'
-import CardNew from '../../components/cardNew'
-import Link from 'next/link'
 
-import AmountSVG from '../../components/icon/amount'
-import solid from '../../components/icon/solid'
-import duo from '../../components/icon/duo'
-import dark from '../../components/icon/dark'
-import light from '../../components/icon/light'
-
-import Image from 'next/image'
+// Media
 import ImageZero from '/public/image/docs/docs-00.jpg'
 import ImageZeroMobile from '/public/image/docs/docs-00-mobile.png'
-import { ReactNode } from 'react'
-
-import BtnCopy from '../../components/button/copy'
-
-import { FadeIn } from '../../components/animation'
 
 export default function Index() {
 	return (
@@ -92,7 +99,7 @@ export default function Index() {
 												<li>Ideal para aplicação em texto</li>
 											</ul>
 										}>
-										<AmountSVG name={'eco'}>{solid.eco}</AmountSVG>
+										<BvIcon name={'eco'} variant={'solid'} />
 									</CardIcon>
 									<CardIcon
 										title='Duo'
@@ -102,7 +109,7 @@ export default function Index() {
 												<li>Ideal para aplicações grandes</li>
 											</ul>
 										}>
-										<AmountSVG name={'eco'}>{duo.eco}</AmountSVG>
+										<BvIcon name={'eco'} variant={'duo'} />
 									</CardIcon>
 									<CardIcon
 										title='Dark'
@@ -114,7 +121,7 @@ export default function Index() {
 												<li>Ideal para aplicações pequenas</li>
 											</ul>
 										}>
-										<AmountSVG name={'eco'}>{dark.eco}</AmountSVG>
+										<BvIcon name={'eco'} variant={'dark'} />
 									</CardIcon>
 									<CardIcon
 										title='Light'
@@ -126,7 +133,7 @@ export default function Index() {
 												<li>Ideal para aplicações pequenas</li>
 											</ul>
 										}>
-										<AmountSVG name={'eco'}>{light.eco}</AmountSVG>
+										<BvIcon name={'eco'} variant={'light'} />
 									</CardIcon>
 								</div>
 							</div>

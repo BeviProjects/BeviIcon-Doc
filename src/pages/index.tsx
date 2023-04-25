@@ -1,9 +1,21 @@
+// React / NextJS
 import Head from 'next/head'
-import Image from 'next/image'
+
+// External lib
+
+// Internal lib
+
+// Component
+// atom
+import { FadeIn } from '../components/atoms/animation'
+
+// molecule
+// organism
+
+// Style module
 import style from './Style.module.scss'
-import Link from 'next/link'
-import BtnCopy from '../components/button/copy'
-import { FadeIn } from '../components/animation'
+
+// Media
 
 export default function Home() {
 	return (
@@ -29,14 +41,6 @@ export default function Home() {
 									</p>
 								</div>
 							</div>
-							{/* <div className='bv-row'>
-								<div className='bv-col'>
-									<code>
-										https://cdn.jsdelivr.net/gh/BeviProjects/BeviIconFont@v1.0-beta/dist/compressed/main.css
-										<BtnCopy contentCopy='https://cdn.jsdelivr.net/gh/BeviProjects/BeviIconFont@v1.0-beta/dist/compressed/main.css' />
-									</code>
-								</div>
-							</div> */}
 						</div>
 					</FadeIn.YtoTop>
 				</div>

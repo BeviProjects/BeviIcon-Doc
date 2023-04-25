@@ -1,19 +1,30 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+// React / NextJS
+import { useState } from 'react'
 import Head from 'next/head'
+
+// External lib
+
+// Internal lib
+
+// Component
+// atom
+import LinkScroll from '../../components/atoms/linkScroll'
+import TitleSection from '../../components/atoms/titleSection'
+import Button from '../../components/atoms/btnOpenModal'
+
+// molecule
+import IconCollection from '../../components/molecules/iconCollection'
+
+// organism
+import Modal from '../../components/organisms/modal'
+
+// Style module
 import style from './Style.module.scss'
-import Modal from '../../components/modal'
-import { ReactNode, useState } from 'react'
-import LinkScroll from '../../components/linkScroll'
 
-import TitleSection from '../../components/titleSection'
-import IconCollection from '../../components/iconCollection'
-import Button from '../../components/button/icon'
-
-// Modal.setAppElement('#root')
-
+// Media
 export default function index() {
-	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [isOpen, setIsOpen] = useState(false)
-	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [nameIcon, setNameIcon] = useState('')
 	return (
 		<>
@@ -21,7 +32,7 @@ export default function index() {
 				<title>Ícones</title>
 			</Head>
 			<div className='ds-flex flow-col-nw gap-lg'>
-				<div className='bv-container-sm ds-flex flow-col-nw gap-xl'>
+				<div className='bv-container-md ds-flex flow-col-nw gap-xl'>
 					<section>
 						<TitleSection>Todos os ícones</TitleSection>
 					</section>
@@ -38,20 +49,32 @@ export default function index() {
 						<ButtonAnchor to='k' />
 						<ButtonAnchor to='l' />
 						<ButtonAnchor to='m' />
+						<ButtonAnchor to='n' />
+						<ButtonAnchor to='o' />
 						<ButtonAnchor to='p' />
 						<ButtonAnchor to='q' />
+						<ButtonAnchor to='r' />
 						<ButtonAnchor to='s' />
 						<ButtonAnchor to='t' />
 						<ButtonAnchor to='v' />
 						<ButtonAnchor to='w' />
 						<ButtonAnchor to='y' />
 					</section>
-					{/* https://www.youtube.com/watch?v=QzW03hyw_bU */}
 				</div>
 				<div className='bv-container-md ds-flex flow-col-nw gap-lg'>
 					<IconCollection anchor='a' title='A'>
 						<Button
 							name='account box'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='acute'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='add task'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -62,6 +85,11 @@ export default function index() {
 						/>
 						<Button
 							name='alternate email'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='approval delegation'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -116,12 +144,22 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='auto graph'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='autorenew'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
 					</IconCollection>
 					<IconCollection anchor='b' title='B'>
+						<Button
+							name='badge'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 						<Button
 							name='bank'
 							setIsOpen={setIsOpen}
@@ -134,6 +172,11 @@ export default function index() {
 						/>
 						<Button
 							name='beviprotege'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='big debts'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -157,8 +200,23 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+						<Button
+							name='brightness hight'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='build'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 					</IconCollection>
 					<IconCollection anchor='c' title='C'>
+						<Button
+							name='calculate'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 						<Button
 							name='campaign'
 							setIsOpen={setIsOpen}
@@ -166,6 +224,11 @@ export default function index() {
 						/>
 						<Button
 							name='chalkboard user'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='chart line down'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -240,7 +303,17 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='content cut'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='corporate'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='crane'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -257,7 +330,27 @@ export default function index() {
 					</IconCollection>
 					<IconCollection anchor='d' title='D'>
 						<Button
+							name='database'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='description'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='desktop'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='devices'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='directions boat'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -267,7 +360,17 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='donut small'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='door open'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='dove'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -289,12 +392,32 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='elderly'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='email content'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
 						<Button
 							name='emergency home'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='emergency'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='event available'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='event busy'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -335,8 +458,23 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+						<Button
+							name='free cancellation'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 					</IconCollection>
 					<IconCollection anchor='g' title='G'>
+						<Button
+							name='gasoline'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='gold'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 						<Button
 							name='groups'
 							setIsOpen={setIsOpen}
@@ -375,6 +513,16 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='health and safety'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='heap snapshot large'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='heart'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
@@ -390,7 +538,17 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='home moving'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='home'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='hourglass top'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -411,6 +569,16 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+						<Button
+							name='interest free'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='iventory'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 					</IconCollection>
 					<IconCollection anchor='k' title='K'>
 						<Button
@@ -426,7 +594,32 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='laptop'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='laptop chart'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='laptop money'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='laptop plus'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='launch'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='leaderboard'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -447,6 +640,11 @@ export default function index() {
 						/>
 						<Button
 							name='local shipping'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='lock open'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -488,7 +686,17 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='money plus'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='money'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='money time'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -498,7 +706,36 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 					</IconCollection>
+					<IconCollection anchor='n' title='N'>
+						<Button
+							name='nutrition'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+					</IconCollection>
+					<IconCollection anchor='o' title='O'>
+						<Button
+							name='order approve'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='overview'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+					</IconCollection>
 					<IconCollection anchor='p' title='P'>
+						<Button
+							name='paid'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='pending actions'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 						<Button
 							name='perm phone msg'
 							setIsOpen={setIsOpen}
@@ -525,7 +762,29 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='pix'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='place'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='price check'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='psychiatry'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+					</IconCollection>
+					<IconCollection anchor='r' title='R'>
+						<Button
+							name='repaid'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -564,6 +823,21 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='security'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='sell'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='school'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='sentiment dissatisfied'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
@@ -585,6 +859,11 @@ export default function index() {
 						/>
 						<Button
 							name='shield with house'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='shopping basket'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -628,6 +907,21 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+						<Button
+							name='stethoscope'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='storefront'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='surprise box'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 					</IconCollection>
 					<IconCollection anchor='t' title='T'>
 						<Button
@@ -636,7 +930,22 @@ export default function index() {
 							setNameIcon={setNameIcon}
 						/>
 						<Button
+							name='tax paper'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
 							name='thumb up'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='timelapse'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='today'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
@@ -652,8 +961,18 @@ export default function index() {
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>
+						<Button
+							name='verified user'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 					</IconCollection>
 					<IconCollection anchor='w' title='W'>
+						<Button
+							name='wallet'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
 						<Button
 							name='warning'
 							setIsOpen={setIsOpen}
@@ -661,6 +980,11 @@ export default function index() {
 						/>
 						<Button
 							name='watch later'
+							setIsOpen={setIsOpen}
+							setNameIcon={setNameIcon}
+						/>
+						<Button
+							name='wheel'
 							setIsOpen={setIsOpen}
 							setNameIcon={setNameIcon}
 						/>

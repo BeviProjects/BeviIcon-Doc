@@ -1,21 +1,31 @@
+// React / NextJS
+import { useState } from 'react'
 import Head from 'next/head'
-import styleMain from '../Style.module.scss'
-import style from './Style.module.scss'
-import CardNew from '../../components/cardNew'
-// import Link from 'next/link'
-import TitleSection from '../../components/titleSection'
-import LinkScroll from '../../components/linkScroll'
-import Button from '../../components/button/icon'
-import Modal from '../../components/modal'
-import IconCollection from '../../components/iconCollection'
-import { IconCollectionVersion } from '../../components/iconCollection/version'
 
-import { ReactNode, useState } from 'react'
+// External lib
+
+// Internal lib
+
+// Component
+// atom
+import TitleSection from '../../components/atoms/titleSection'
+import LinkScroll from '../../components/atoms/linkScroll'
+import Button from '../../components/atoms/btnOpenModal'
+
+// molecule
+import IconCollection from '../../components/molecules/iconCollection'
+import { IconCollectionVersion } from '../../components/molecules/iconCollection/version'
+
+// organism
+import Modal from '../../components/organisms/modal'
+
+// Style module
+import style from './Style.module.scss'
+
+// Media
 
 export default function Index() {
-	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [isOpen, setIsOpen] = useState(false)
-	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const [nameIcon, setNameIcon] = useState('')
 	return (
 		<>
@@ -23,14 +33,15 @@ export default function Index() {
 				<title>Documentação</title>
 			</Head>
 			<div className='ds-flex flow-col-nw gap-lg'>
-				<div className='bv-container-sm ds-flex flow-col-nw gap-xl'>
+				<div className='bv-container-md ds-flex flow-col-nw gap-xl'>
 					<section>
 						<TitleSection>Coleções de ícones</TitleSection>
 					</section>
 					<section className='ds-flex flow-row-wr gap-md'>
 						<LinkScroll to='bevipentagono'>Bevipentagono</LinkScroll>
 						<LinkScroll to='beviprotege'>Beviprotege</LinkScroll>
-						<LinkScroll to='version1.0'>Versão 1.0</LinkScroll>
+						<LinkScroll to='version1.1'>Versão 1.1</LinkScroll>
+						<LinkScroll to='version1.2'>Versão 1.2</LinkScroll>
 					</section>
 				</div>
 				<div className='bv-container-md ds-flex flow-col-nw gap-lg'>
@@ -55,8 +66,8 @@ export default function Index() {
 						/>
 					</IconCollection>
 					<IconCollectionVersion.Root
-						anchor='version1.0'
-						title='Versão 1.0'
+						anchor='version1.1'
+						title='Versão 1.1'
 						styleSection={`${style.collection} bgc-primary-03 radius-xl`}>
 						<IconCollectionVersion.UpdateArea>
 							<Button
@@ -423,6 +434,313 @@ export default function Index() {
 							/>
 							<Button
 								name='youtube'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+						</IconCollectionVersion.NewArea>
+					</IconCollectionVersion.Root>
+					<IconCollectionVersion.Root
+						anchor='version1.2'
+						title='Versão 1.2'
+						styleSection={`${style.collection} bgc-primary-03 radius-xl`}>
+						<IconCollectionVersion.NewArea>
+							<Button
+								name='acute'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='add task'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='approval delegation'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='auto graph'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='badge'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='big debts'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='brightness hight'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='build'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='calculate'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='chart line down'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='content cut'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='crane'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='database'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='desktop'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='devices'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='directions boat'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='donut small'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='dove'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='elderly'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='emergency'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='event available'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='event busy'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='free cancellation'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='gasoline'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='gold'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='health and safety'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='heap snapshot large'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='home moving'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='hourglass top'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='interest free'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='iventory'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='laptop'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='laptop chart'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='laptop money'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='laptop plus'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='leaderboard'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='lock open'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='money plus'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='money time'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='nutrition'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='order approve'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='overview'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='paid'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='pending actions'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='pix'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='price check'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='psychiatry'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='repaid'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='security'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='sell'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='shopping basket'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='stethoscope'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='storefront'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='surprise box'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='tax paper'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='timelapse'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='today'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='verified user'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='wallet'
+								setIsOpen={setIsOpen}
+								setNameIcon={setNameIcon}
+							/>
+							<Button
+								name='wheel'
 								setIsOpen={setIsOpen}
 								setNameIcon={setNameIcon}
 							/>

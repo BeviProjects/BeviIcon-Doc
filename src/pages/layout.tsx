@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { ReactNode, useState } from 'react'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from '../components/organisms/header'
+import Footer from '../components/organisms/footer'
 import useThemeDetector from '../hooks/useThemeDetector'
 
 export interface LayoutProps {
