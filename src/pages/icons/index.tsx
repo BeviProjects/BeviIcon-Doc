@@ -34,7 +34,7 @@ export default function index() {
 			<div className='ds-flex flow-col-nw gap-lg'>
 				<div className='bv-container-md ds-flex flow-col-nw gap-xl'>
 					<section>
-						<TitleSection>Todos os ícones</TitleSection>
+						<TitleSection counter='186'>Todos os ícones</TitleSection>
 					</section>
 					<section className='ds-flex flow-row-wr gap-md'>
 						<ButtonAnchor to='a' />

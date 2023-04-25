@@ -68,6 +68,7 @@ export default function Index() {
 					<IconCollectionVersion.Root
 						anchor='version1.1'
 						title='Versão 1.1'
+						counter='48'
 						styleSection={`${style.collection} bgc-primary-03 radius-xl`}>
 						<IconCollectionVersion.UpdateArea>
 							<Button
@@ -442,6 +443,7 @@ export default function Index() {
 					<IconCollectionVersion.Root
 						anchor='version1.2'
 						title='Versão 1.2'
+						counter='60'
 						styleSection={`${style.collection} bgc-primary-03 radius-xl`}>
 						<IconCollectionVersion.NewArea>
 							<Button

@@ -6,16 +6,30 @@ export interface RootProps {
 	styleSection?: string
 	anchor: string
 	title: string
+	counter?: string
 	children: ReactNode
 }
 
-const Root = ({ styleSection, anchor, title, children }: RootProps) => {
+const Root = ({
+	styleSection,
+	anchor,
+	title,
+	counter,
+	children,
+}: RootProps) => {
 	return (
 		<FadeIn.YtoTop>
 			<section
 				className={`${styleSection} ds-flex flow-col-nw gap-lg`}
 				id={anchor.toLowerCase()}>
-				<h3 className='font-weight-600'>{title}</h3>
+				<div className='w-100 ds-flex flow-row-nw align-center justify-between'>
+					<h3 className='font-weight-600'>{title}</h3>
+					{counter ? (
+						<span className='title-sm font-weight-600 color-gray-80'>
+							{counter}
+						</span>
+					) : null}
+				</div>
 				<div className={`w-100 ds-flex flow-col-nw gap-md`}>{children}</div>
 			</section>
 		</FadeIn.YtoTop>
