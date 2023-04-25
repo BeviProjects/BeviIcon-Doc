@@ -1027,7 +1027,7 @@ const ButtonAnchor = ({ to }: ButtonAnchorProps) => {
 	return (
 		<LinkScroll
 			to={to.toLowerCase()}
-			className={`${style.buttonAnchor} aspect-ratio-square`}>
+			className={`${style.buttonAnchor} ds-flex-center aspect-square p-00`}>
 			{to.toUpperCase()}
 		</LinkScroll>
 	)

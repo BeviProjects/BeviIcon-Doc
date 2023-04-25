@@ -57,13 +57,19 @@ const index = () => {
 					</div>
 					<div
 						className={`${style.content} ps-absolute ds-flex-center lg:ds-none flow-row-nw sm:flow-col-nw gap-md radius-lg lg:hidden`}>
-						<Link href='/docs' className={style.itemMenu}>
+						<Link
+							href='/docs'
+							className={`${style.itemMenu} text-decoration-none`}>
 							Documentação
 						</Link>
-						<Link href='/collection' className={style.itemMenu}>
+						<Link
+							href='/collection'
+							className={`${style.itemMenu} text-decoration-none`}>
 							Coleções
 						</Link>
-						<Link href='/icons' className={style.itemMenu}>
+						<Link
+							href='/icons'
+							className={`${style.itemMenu} text-decoration-none`}>
 							Ícones
 						</Link>
 					</div>

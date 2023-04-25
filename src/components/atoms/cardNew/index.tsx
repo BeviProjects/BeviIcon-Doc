@@ -9,7 +9,7 @@ const index = () => {
 		<FadeIn.Opacity delayProp={0.8}>
 			<Link
 				href='/collection#version1.2'
-				className={`${style.card} ds-flex flow-col-nw align-center gap-md`}>
+				className={`${style.card} ds-flex flow-col-nw align-center gap-md text-decoration-none`}>
 				<h3 className='text-align-center font-weight-bold ds-inline-flex align-center gap-sm color-primary-01'>
 					Novidade! <i className='bi-heart-solid'></i>
 				</h3>

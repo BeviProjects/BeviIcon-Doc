@@ -24,7 +24,7 @@ const Button = ({ name, setIsOpen, setNameIcon }: ButtonProps) => {
 		<button
 			type='button'
 			onClick={() => [setIsOpen(true), setNameIcon(camelCaseName)]}
-			className={style.iconBtn}
+			className={`${style.iconBtn} ds-flex-center`}
 			aria-label={`Botão ${name}`}>
 			<i
 				className={`bv-${name
