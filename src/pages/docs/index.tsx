@@ -264,7 +264,7 @@ export default function Index() {
 										de algumas regras:
 										<br />
 										<br />
-										<b>Prefixo:</b> bi-{' '}
+										<b>Prefixo:</b> bv-{' '}
 										<span className='font-style-italic'>
 											Abreviação de Bevi Icon
 										</span>
@@ -279,8 +279,8 @@ export default function Index() {
 								<div className='ds-flex flow-col-nw gap-sm'>
 									<h4 className='font-weight-600'>Exemplo:</h4>
 									<code>
-										&#60;i class=&#34;bi-eco-solid&#34; /&#62;
-										<BtnCopy contentCopy='<i class="bi-eco-solid" />' />
+										&#60;i class=&#34;bv-eco-solid&#34; /&#62;
+										<BtnCopy contentCopy='<i class="bv-eco-solid" />' />
 									</code>
 								</div>
 							</div>
